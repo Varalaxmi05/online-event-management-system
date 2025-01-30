@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #333;
+            color: white;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 20px;
+        }
+        .sidebar h2 {
+            text-align: center;
+        }
+        .sidebar a {
+            color: white;
+            text-decoration: none;
+            display: block;
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+        .content {
+            margin-left: 260px;
+            padding: 20px;
+        }
+        .content h1 {
+            margin-top: 0;
+        }
+        .card {
+            background: white;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .card h2 {
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Admin Dashboard</h2>
+        <a href="#dashboard">Dashboard</a>
+        <a href="#events-count">Category</a>
+        <a href="#total-bookings">Manage Sponsors</a>
+        <a href="#events">Events</a>
+        <a href="#confirmed-booking">Manage Users</a>
+        
+    </div>
+    
+    <div class="content">
+        <div id="dashboard" class="card">
+            <h2>Dashboard</h2>
+            
+           
+            <p>Total Events: <span id="events-count">0</span></p>
+            <p>Total Registered Users: <span id="users-count">0</span></p>
+            <p>Total Booking: <span id="total-booking">0</span></p>
+            
+            <p>Total Confirmed Booking: <span id="confirmed-booking">0</span></p>
+            
+        </div>
+        
+        <div id="category" class="card">
+            <h2>events count</h2>
+            <!-- events-count -->
+        </div>
+        
+        <div id="manage-sponsors" class="card">
+            <h2>users counts</h2>
+            <!-- Sponsor management interface -->
+        </div>
+        
+        <div id="events" class="card">
+            <h2>Total bookings</h2>
+            <!-- Event management interface -->
+        </div>
+        
+        
+        
+        
+        
+        
+    </div>
+</body>
+</html>
